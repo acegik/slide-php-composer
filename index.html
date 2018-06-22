@@ -1,0 +1,194 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>PHP composer</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="pnhung177">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="/slide-php-composer/assets/reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="/slide-php-composer/assets/reveal.js/css/theme/black.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="/slide-php-composer/assets/reveal.js/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="/slide-php-composer/assets/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="/slide-php-composer/assets/reveal.js/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+
+				
+<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
+<script type="text/template">
+## PHP - Composer
+
+Getting started with Composer
+
+(https://github.com/pnhung177?tab=repositories)
+</script>
+</section>
+
+<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
+<script type="text/template">
+## Overview
+
+* What's Composer?
+  * is a tool for dependency management in PHP.
+  * is not a package manager in the same sense as Yum or Apt are.
+  * manages packages on a per-project basis.
+  * installs packages in a directory (e.g. vendor) inside your project.
+
+Note:
+
+What does this mean?
+* Scope is per-project, not global
+* Resolves dependencies
+* Runs installation tasks
+
+</script>
+</section>
+
+<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
+<script type="text/template">
+## Installation
+
+* Locally
+  * To install Composer locally, run the installer from [download page](https://getcomposer.org/download/).
+  * The installer downloads composer.phar to your working directory.
+  * run php composer.phar in order to run Composer.
+
+--
+
+* Globally
+  *  Move `composer.phar` to a directory that is in your path (e.g. `/usr/local/bin`):
+```bash
+sudo mv composer.phar /usr/local/bin/composer
+```
+  * or
+    * You can place the Composer PHAR anywhere you wish.
+    * includes the directory as a part of your PATH, and you can access it globally. 
+
+Note:
+
+> All settings correct for using Composer
+> Downloading...
+
+> Composer (version 1.6.5) successfully installed to: composer.phar
+> Use it: php composer.phar
+</script>
+</section>
+
+<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
+<script type="text/template">
+## Composer's commands
+
+* list all of commands (default command)):
+```bash
+composer
+```
+* `help` command:
+  * displays common help:
+```bash
+composer --help
+```
+  * displays help for a given command:
+```bash
+composer help init
+```
+
+</script>
+</section>
+
+<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
+<script type="text/template">
+# References
+
+* [Composer's documentation](https://getcomposer.org/doc/)
+* [PHP's phar](http://php.net/manual/en/book.phar.php)
+
+Note:
+
+(^-^)
+
+</script>
+</section>
+
+<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
+<script type="text/template">
+# Thank you
+
+</script>
+</section>
+
+
+
+			</div>
+		</div>
+
+		<script src="/slide-php-composer/assets/reveal.js/lib/js/head.min.js"></script>
+		<script src="/slide-php-composer/assets/reveal.js/js/reveal.js"></script>
+
+		<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '/slide-php-composer/assets/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '/slide-php-composer/assets/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/slide-php-composer/assets/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '/slide-php-composer/assets/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '/slide-php-composer/assets/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					
+					{ src: '/slide-php-composer/assets/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					
+					
+				]
+			});
+		</script>
+
+	</body>
+</html>
