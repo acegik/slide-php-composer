@@ -189,6 +189,19 @@ composer install
 
 --
 
+### `composer update`
+
+* reads the composer.json file from the current directory, processes it, and updates, removes or installs all the dependencies:
+```bash
+composer update
+```
+* list the package(s) you want to update to limit the update operation to a few packages as such:
+```bash
+composer update vendor1/package1 vendor2/*
+```
+
+--
+
 ### `composer validate`
 
 * validates a given composer.json and composer.lock:
